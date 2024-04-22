@@ -1,12 +1,61 @@
 ---
-title: "Movie_Report1"
+title: "Movie Report"
 author: "Anindita Basu"
 format: html
-editor: visual
+execute:
+  echo: false
+  code-fold : true
 ---
 
 # *Game of Thrones*
 
 *Game of Thrones* is an American fantasy drama television series created by *David Benioff* and *D. B. Weiss* for *HBO*. It is an adaptation of *A Song of Ice and Fire*, a series of fantasy novels by *George R. R. Martin*, the first of which is *A Game of Thrones*. The show premiered on *HBO* in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons.
 
+![GoT logo](GoT.jpg)
 
+## Game of Thrones Ratings Statistics
+
+*Game of Throne* captivated audiences worldwide. Here are some key statistics:
+
+1\. **IMDb Rating**: The show boasts an impressive **9.2/10** IMDb rating.
+
+2\. **Emmy Awards**: *Game of Thrones* received a staggering **159 Emmy Award nominations** and secured **59 wins**. Notably, it won **4 Outstanding Drama Series** awards and **4 Outstanding Supporting Actor** awards for Peter Dinklage.
+
+3\. **Viewership**:
+
+-   The show's premiere was watched by **2.2 million viewers**.
+
+-   The first season averaged **2.5 million viewers per episode**.
+
+-   By the second season, the average gross audience surged to **11.6 million viewers**.
+
+4\. **Final Season**: The eighth and final season reached an average of **46 million viewers per episode**.
+
+```{r}
+# Create a bar plot for viewership over time
+
+
+# Create a data frame with viewership data
+viewership_df <- data.frame(
+  Season = c("Premiere", "Season 1", "Season 2", "Final Season"),
+  Average_Viewers = c(2.2, 2.5, 11.6, 46)
+)
+
+
+viewership_df
+
+```
+
+*Game of Thrones* experienced significant viewership fluctuations across its seasons. Notably:
+
+1\. **Season 3 to Season 5**:
+
+ - The viewership increased by approximately **30%**.
+
+ - The infamous **Red Wedding** episode in Season 3 (*"The Rains of Castamere"*) contributed to this surge due to its shocking events and emotional impact.
+
+2\. **Final Season (Season 8)**:
+
+ - Despite mixed reviews, the series finale (*"The Iron Throne"*) still attracted a substantial audience.
+
+ - The average viewership reached an impressive **46 million viewers per episode**.
